@@ -9,12 +9,15 @@
 ;;;; d. Write your own plugins in Emacs Lisp.
 ;;;; e. Mouseless workflow.
 ;;;; f. Super-stable and lightweight even with a ton of plugins.
+;;;; g. Basic command uniformity among different tools
+;;;; h. Super-portable: use the same configuration on most platforms
+;;;; i. Free (as in root beer and speech)
 
 ;;=====================================================================
 
 ;; 2. Navigation
 
-;;                           M-SHIFT->
+;;                              M->
 ;;                               ^
 ;;                               ^
 ;;                              C-p
@@ -24,7 +27,7 @@
 ;;                              C-n
 ;;                               v
 ;;                               v
-;;                           M-SHIFT-<
+;;                              M-<
 
 (def s "Some String")
 
@@ -58,7 +61,7 @@
 
 (def a "Some string")
 
-(fn some-fn
+(defn a-function
   [a] (first (reverse a)))
 
 [1 2 3 4]
@@ -92,6 +95,11 @@
 
 ;;=====================================================================
 
+;; 8. Buffers.
+
+
+;;=====================================================================
+
 ;; 8. Code Navigation.
 ;;;; a. (CIDER) Step into a function with M-.
 ;;;; b. (CIDER) Step out with M-,
@@ -101,7 +109,7 @@
 
 (frequencies [1 2 3 4 5 1 3 5 1])
 
-(def x (str "a" "b" "c"))
+(a-function (range -10 -120 -2))
 
 ;;=====================================================================
 
@@ -214,6 +222,11 @@
 ;;;;;; vii. C-c C-c to perform commit
 ;;;;;; viii. h for help
 ;;;;;; ix. q for quit
+
+;;=====================================================================
+
+;; 17. Markdown
+;;;; a. README.md
 
 ;;=====================================================================
 
