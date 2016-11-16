@@ -159,6 +159,8 @@
 
 (def radder-value (radder-fn -10000 10000 2))
 
+;;=====================================================================
+
 ;; 13. Enlighten mode
 ;;;; a. Enable: M-x cider-enlighten-mode
 ;;;; b. Evaluate functions to enlighten: C-c C-e
@@ -172,14 +174,21 @@
 
 ;;=====================================================================
 
-;; 14. Tracing
+;; 14. Testing
+;;;; a. Run tests for current namespace using C-c C-t C-n. Tests in *ns* or *ns*-test are run.
+;;;; b. Run tests for all loaded namespaces C-c C-t C-l
+;;;; c. Run tests for all project namespaces C-c C-t C-l
+
+;;=====================================================================
+
+;; 15. Tracing
 ;;;; a. Enable tracing on a function with C-c M-t v
 ;;;; b. Call the function
 
 (defn recursive-add [a b]
   (cond
     (neg? a) (recursive-add (inc a) (dec b))
-    (zero? a) b
+    (zero? a) a
     (pos? a) (recursive-add (dec a) (inc b))))
 
 (recursive-add 2 3)
@@ -192,15 +201,9 @@
 
 ;;=====================================================================
 
-;; 15. Testing
-;;;; a. Run tests for current namespace using C-c C-t C-n. Tests in *ns* or *ns*-test are run.
-;;;; b. Run tests for all loaded namespaces C-c C-t C-l
-;;;; c. Run tests for all project namespaces C-c C-t C-l
-
-;;=====================================================================
-
 ;; 16. Source Control
-;;;; a. VCS (C-x v ..., or click Git:... below) 
+;;;; a. VCS (C-x v ..., or click Git:... below)
+;;;;;; i. Show log: C-x v l
 ;;;; b. Magit
 ;;;;;; i. Show Magit status: C-x g
 ;;;;;; ii. Navigate through sections with p & n
