@@ -195,6 +195,13 @@
 
 ;;=====================================================================
 
+;; 15. Source Control
+;;;; a. Show history: C-x v l
+;;;; b. Compare with base version: C-x v =
+;;;; c. 
+
+;;=====================================================================
+
 ;; 15. Setup
 ;;;; a. Install base Emacs
 ;;;; b. Add ~/.emacs.d to Git
