@@ -159,6 +159,10 @@
 
 (def radder-value (radder-fn -10000 10000 2))
 
+;; 13. Enlighten mode
+;;;; a. Enable: M-x cider-enlighten-mode
+;;;; b. Evaluate functions to enlighten: C-c C-e
+
 (defn raddest-fn [x y]
   (let [z (* x y)
         zz (+ x y)]
@@ -168,7 +172,7 @@
 
 ;;=====================================================================
 
-;; 13. Tracing
+;; 14. Tracing
 ;;;; a. Enable tracing on a function with C-c M-t v
 ;;;; b. Call the function
 
@@ -188,14 +192,14 @@
 
 ;;=====================================================================
 
-;; 14. Testing
+;; 15. Testing
 ;;;; a. Run tests for current namespace using C-c C-t C-n. Tests in *ns* or *ns*-test are run.
 ;;;; b. Run tests for all loaded namespaces C-c C-t C-l
 ;;;; c. Run tests for all project namespaces C-c C-t C-l
 
 ;;=====================================================================
 
-;; 15. Source Control
+;; 16. Source Control
 ;;;; a. VCS (C-x v ..., or click Git:... below) 
 ;;;; b. Magit
 ;;;;;; i. Show Magit status: C-x g
@@ -210,7 +214,7 @@
 
 ;;=====================================================================
 
-;; 16. Setup
+;; 17. Setup
 ;;;; a. Install base Emacs
 ;;;; b. Add ~/.emacs.d to Git
 ;;;; c. Set executable path
