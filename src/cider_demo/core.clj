@@ -1,8 +1,14 @@
 (ns cider-demo.core)
 
+;; About Me.
+;; Larry Christensen
+;; Senior Software Developer, ClientSuccess.com
+;; Founder, CEO, CTO, Lead Architect, and Principle Developer at OrcPub.com
+
 ;;=====================================================================
 
 ;; 1. Why Emacs?
+;;;; a. Top-notch presentation software
 ;;;; a. Tight integration with the REPL.
 ;;;; b. Emacs is written in Lisp, by Lispers, for Lispers.
 ;;;; c. Super-customizable with tons of Lisp and Clojure-oriented plugins.
@@ -12,11 +18,12 @@
 ;;;; g. Basic command uniformity among different tools
 ;;;; h. Super-portable: use the same configuration on most platforms
 ;;;; i. Free (as in root beer and speech)
+;;;; j. Tetris: M-x tetris
 
 ;;=====================================================================
 
 ;; 2. Navigation
-
+;;;; a.
 ;;                              M->
 ;;                               ^
 ;;                               ^
@@ -39,6 +46,9 @@
     (prn "This is a really cool function")
     (+ (* a b c)
        (* a b a))))
+
+;;;; b. Jump to line number: M-g g
+;;;; c. Do a command x y times: C-u y x, for example C-u 10 C-p moves cursor up 10 lines 
 
 ;;=====================================================================
 
@@ -96,11 +106,15 @@
 ;;=====================================================================
 
 ;; 8. Buffers.
-
+;;;; a. Create a new buffer: C-x b
+;;;; b. Open a buffer from file: C-x C-f
+;;;; c. Save a buffer: C-x C-s
+;;;; d. List buffers: C-x C-b
+;;;; e. Kill a buffer: C-x k
 
 ;;=====================================================================
 
-;; 8. Code Navigation.
+;; 9. Code Navigation.
 ;;;; a. (CIDER) Step into a function with M-.
 ;;;; b. (CIDER) Step out with M-,
 ;;;; c. (Paredit) Forward s-expr: C-M-f
@@ -113,15 +127,16 @@
 
 ;;=====================================================================
 
-;; 9. Search
+;; 10. Search
 ;;;; a. Regex search forward: C-s
 ;;;; b. Regex search backward: C-r
 ;;;; c. Replace string: M-x replace-string
 ;;;; d. Replace regex: M-x replace-regex
+;;;;;; i. emails.edn
 
 ;;=====================================================================
 
-;; 10. Interactive Development
+;; 11. Interactive Development
 ;;;; a. Evaluate last sexp: C-c C-e
 ;;;; b. Macroexpand-1: C-c C-m
 ;;;; c. Macroexpand-all: C-c M-m
@@ -138,14 +153,14 @@
 
 ;;=====================================================================
 
-;; 11. Refactoring
+;; 12. Refactoring
 ;;;; a. expand-region, C-k, etc.
 ;;;; b. M-x string-replace, M-x regex-replace
 ;;;; c. clj-refactor
 
 ;;=====================================================================
 
-;; 12. Debugging
+;; 13. Debugging
 ;;;; a. Instrument a top-level form: C-u C-M-x
 ;;;; b. Run the instrumented code
 
@@ -169,7 +184,7 @@
 
 ;;=====================================================================
 
-;; 13. Enlighten mode
+;; 14. Enlighten mode
 ;;;; a. Enable: M-x cider-enlighten-mode
 ;;;; b. Evaluate functions to enlighten: C-c C-e
 
@@ -182,14 +197,14 @@
 
 ;;=====================================================================
 
-;; 14. Testing
+;; 15. Testing
 ;;;; a. Run tests for current namespace using C-c C-t C-n. Tests in *ns* or *ns*-test are run.
 ;;;; b. Run tests for all loaded namespaces C-c C-t C-l
 ;;;; c. Run tests for all project namespaces C-c C-t C-l
 
 ;;=====================================================================
 
-;; 15. Tracing
+;; 16. Tracing
 ;;;; a. Enable tracing on a function with C-c M-t v
 ;;;; b. Call the function
 
@@ -209,7 +224,7 @@
 
 ;;=====================================================================
 
-;; 16. Source Control
+;; 17. Source Control
 ;;;; a. VCS (C-x v ..., or click Git:... below)
 ;;;;;; i. Show log: C-x v l
 ;;;; b. Magit
@@ -225,12 +240,12 @@
 
 ;;=====================================================================
 
-;; 17. Markdown
+;; 18. Markdown
 ;;;; a. README.md
 
 ;;=====================================================================
 
-;; 17. Setup
+;; 19. Setup
 ;;;; a. Install base Emacs
 ;;;; b. Add ~/.emacs.d to Git
 ;;;; c. Set executable path
