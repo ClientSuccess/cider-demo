@@ -196,13 +196,21 @@
 ;;=====================================================================
 
 ;; 15. Source Control
-;;;; a. Show history: C-x v l
-;;;; b. Compare with base version: C-x v =
-;;;; c. 
+;;;; a. VCS (C-x v ..., or click Git:... below) 
+;;;; b. Magit
+;;;;;; i. Show Magit status: C-x g
+;;;;;; ii. Navigate through sections with p & n
+;;;;;; iii. Expand/collapse sections with TAB
+;;;;;; iv. Stage and unstage changes with s & u
+;;;;;; v. Commit with c, c
+;;;;;; vi. Enter commit message
+;;;;;; vii. C-c C-c to perform commit
+;;;;;; viii. h for help
+;;;;;; ix. q for quit
 
 ;;=====================================================================
 
-;; 15. Setup
+;; 16. Setup
 ;;;; a. Install base Emacs
 ;;;; b. Add ~/.emacs.d to Git
 ;;;; c. Set executable path
