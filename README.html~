@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+
+</head>
+
+<body>
+
+<h1>cider-demo</h1>
+
+<p>A quick markup demo</p>
+
+<h2>Preview</h2>
+
+<ol>
+<li>C-C-p generates an HTML page and opens the default browser</li>
+<li>C-C-l generates an HTML page and opens the <em>eww</em> browser</li>
+</ol>
+
+<h2>License</h2>
+
+<p>Copyright © 2016 FIXME</p>
+
+<p>Distributed under the Eclipse Public License either version 1.0 or (at
+your option) any later version.</p>
+
+</body>
+</html>
