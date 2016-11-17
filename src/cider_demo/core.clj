@@ -8,7 +8,7 @@
 ;;=====================================================================
 
 ;; 1. Why Emacs?
-;;;; a. Top-notch presentation software
+;;;; a. Top-notch presentation software.
 ;;;; a. Tight integration with the REPL.
 ;;;; b. Emacs is written in Lisp, by Lispers, for Lispers.
 ;;;; c. Super-customizable with tons of Lisp and Clojure-oriented plugins.
@@ -35,6 +35,7 @@
 ;;                               v
 ;;                               v
 ;;                              M-<
+
 
 (def s "Some String")
 
@@ -74,10 +75,9 @@
 (defn a-function
   [a] (first (reverse a)))
 
-[1 2 3 4]
-[5 6 7 8]
 
-[]
+[[1 2 3 4]
+ [5 6 7 8]]
 
 ;;=====================================================================
 
@@ -86,8 +86,7 @@
 ;;;; b. Connect to a running nREPL server with M-x cider-connect
 ;;;; c. Search previous/next command history: M-p, M-n
 ;;;; d. Kill pending evaluation: C-c C-c
-;;;;
-;;;; c. Quit repl: C-c C-q
+;;;; e. Quit repl: C-c C-q
 
 ;;=====================================================================
 
@@ -214,7 +213,7 @@
     (zero? a) a
     (pos? a) (recursive-add (dec a) (inc b))))
 
-(recursive-add 2 3)
+(recursive-add 10 12)
 
 (defn add-tree [t]
   (if (number? t)
